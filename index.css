@@ -11,7 +11,7 @@ html, body {
 
 @font-face {
   font-family: 'Gothic War';
-  src: url('fonts/Gothic War.otf') format('opentype');
+  src: url('Gothic War.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -578,3 +578,4 @@ header {
   white-space: nowrap;
   border: 0;
 }
+
