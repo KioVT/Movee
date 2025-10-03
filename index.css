@@ -544,6 +544,75 @@ header {
   }
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .navbar li {
+    margin: 0.3rem 0;
+    font-size: 1.2rem;
+  }
+
+  .hero {
+    padding-top: 7rem; /* prevent header overlap */
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero .tagline {
+    font-size: 1.2rem;
+  }
+
+  .duo-section h2,
+  .content-section h2 {
+    font-size: 2rem;
+  }
+
+  .member-profile img {
+    width: 180px;
+    height: auto;
+  }
+
+  .member-profile h3 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+  }
+
+  .member-profile .subtitle {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .profile-button {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .content-link {
+    font-size: 1.5rem;
+  }
+
+  .site-footer .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .site-footer .footer-brand {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 600px) {
   .hero h1 {
     font-size: 2.1rem;
