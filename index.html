@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movee Website</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="files/index.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav aria-label="Main navigation">
+      <ul class="navbar">
+        <li><a href="#home" class="brand">movee</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#meet-the-duo">Talents</a></li>
+        <li><a href="#content">Content</a></li>
+        <li><a href="Contact.html">Contact</a></li> <!-- Contact Page-->
+        <li class="social-icons">
+          <a href="#" aria-label="Social Media">
+            <span class="visually-hidden">Socials here</span>
+            <!-- Add actual icons here -->
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section id="about"class="hero">
+      <div class="hero-content">
+        <h1>movee</h1>
+        <p class="tagline">Movee is a duo of English-speaking VTubers who strive to entertain.</p>
+        <p><a href="#meet-the-duo" class="herobutton">Meet the Duo</a><span class="arrow"> → </p>
+      </div>
+    </section>
+
+    <div class="gradiant">
+      <section id="meet-the-duo" class="duo-section">
+        <h2 id="talents">Meet the Duo</h2>
+        
+        <div class="duo-profiles">
+          <article class="member-profile">
+            <div class="profile-content">
+              <h3>Momo</h3>
+              <p class="subtitle">Gothic Idol Bunny</p>
+              <a href="Momo.html" class="profile-button">Meet Momo</a>
+            </div>
+            <img src="momo.png" alt="Momo - Gothic Idol Bunny">
+          </article>
+
+          <article class="member-profile">
+            <img src="devy.png" alt="Devy - Scene Girlfailure Racoon">
+            <div class="profile-content">
+              <h3>Devy</h3>
+              <p class="subtitle">Scene Girlfailure Racoon</p>
+              <a href="Devy.html" class="profile-button">Meet Devy</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- WIP as need to integrate youtube stuff -->
+      <section id="content" class="content-section">
+        <h2>Recent Content</h2>
+        <div class="video-grid">
+          <div class="video-card">
+            <div class="video-placeholder"></div>
+            <img src="placeholder1.png" alt="Momo thumbnail">
+          </div>
+          <div class="video-card">
+              <div class="video-placeholder"></div>
+              <img src="placeholder2.png" alt="devy thumbnail">
+            </div>
+            <div class="video-card">
+              <div class="video-placeholder"></div>
+              <img src="placeholder1.png" alt="Momo thumbnail">
+            </div>
+            <div class="video-card">
+              <div class="video-placeholder"></div>
+              <img src="placeholder2.png" alt="devy thumbnail">
+            </div>
+        </div>
+        <div class="content">
+          <a href="Content.html" class="content-link">See More Content</a>
+        </div>
+      </section> 
+    </div>
+    
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <a href="#home" class="footer-brand">movee</a>
+      <div class="social-links">
+        <!-- Add actual social icons here -->
+        <p class="copyright">&copy; 2025 Movee. All rights reserved.</p>
+        <a href="#" aria-label="Twitter"><span class="visually-hidden">Twitter</span></a>
+        <a href="#" aria-label="YouTube"><span class="visually-hidden">YouTube</span></a>
+        <a href="#" aria-label="Twitch"><span class="visually-hidden">Twitch</span></a>
+        
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

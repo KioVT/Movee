@@ -1,0 +1,408 @@
+/* === GOTHIC WAR FONT === */
+@import url('https://fonts.cdnfonts.com/css/gothic-war');
+
+/* === RESET & BASE === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100vh;
+  font-family: 'Gothic War', Arial, sans-serif;
+  background: linear-gradient(180deg, #d1b0f6 0%, #a06cc8 100%);
+  color: #181018;
+  letter-spacing: 1.5px;
+}
+
+/* === PAGE BORDER === */
+body {
+  border: 12px solid #181018;
+}
+
+/* === HEADER & NAVIGATION === */
+.site-header {
+  background: #fff;
+  width: 100%;
+  border-bottom: 2px solid #181018;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  list-style: none;
+  height: 60px;
+  gap: 2.2rem;
+}
+
+.navbar .brand {
+  font-size: 2.2rem;
+  color: #181018;
+  text-decoration: none;
+  font-family: 'Gothic War', Arial, sans-serif;
+  margin-right: 2.5rem;
+}
+
+.navbar li:not(.brand):not(.social-icons) {
+  font-size: 1.3rem;
+  text-transform: lowercase;
+}
+
+.navbar a {
+  color: #181018;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 1.2rem;
+  font-family: 'Gothic War', Arial, sans-serif;
+}
+
+.navbar a:hover {
+  color: #a06cc8;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-left: 2.5rem;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #181018;
+  transition: color 0.2s;
+}
+
+.social-icons a:hover {
+  color: #a06cc8;
+}
+
+/* === MAIN PAGE LAYOUT === */
+.profile-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 90px 2vw 0 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* === PROFILE TOP SECTION === */
+.profile-top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  gap: 3vw;
+  justify-content: center;
+}
+
+.profile-art-container {
+  position: relative;
+  width: 340px;
+  height: 420px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-art-bg {
+  width: 340px;
+  height: 420px;
+  position: absolute;
+  left: 0; top: 0;
+  z-index: 1;
+  background: none;
+  clip-path: polygon(50% 0%, 90% 20%, 100% 50%, 90% 80%, 50% 100%, 10% 80%, 0% 50%, 10% 20%);
+  background: #181018;
+}
+
+.hero-image {
+  width: 340px;
+  height: 420px;
+  object-fit: cover;
+  position: absolute;
+  left: 0; top: 0;
+  z-index: 2;
+  clip-path: polygon(50% 0%, 90% 20%, 100% 50%, 90% 80%, 50% 100%, 10% 80%, 0% 50%, 10% 20%);
+  border: none;
+}
+
+/* === PROFILE INFO SECTION === */
+.profile-info {
+  flex: 1;
+  min-width: 340px;
+  max-width: 540px;
+  z-index: 3;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.profile-header h1 {
+  font-size: 3.2rem;
+  color: #181018;
+  letter-spacing: 4px;
+  font-family: 'Gothic War', Arial, sans-serif;
+}
+
+.profile-header .profile-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-left: 1.2rem;
+}
+
+.profile-header .profile-icons a {
+  color: #181018;
+  font-size: 1.3rem;
+  margin-left: 0.2rem;
+  transition: color 0.2s;
+}
+
+.profile-header .profile-icons a:hover {
+  color: #a06cc8;
+}
+
+.profile-header-line {
+  border: none;
+  border-top: 2px solid #181018;
+  margin: 0.3rem 0 1.2rem 0;
+  width: 100%;
+}
+
+.profile-tagline {
+  font-size: 1.1rem;
+  margin-bottom: 1.3rem;
+  font-family: 'Gothic War', Arial, sans-serif;
+}
+
+.profile-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem 1.8rem;
+  font-size: 1.08rem;
+  font-family: 'Gothic War', Arial, sans-serif;
+}
+
+.profile-details-grid .left {
+  text-align: left;
+}
+
+.profile-details-grid .right {
+  text-align: right;
+}
+
+.profile-details-grid .label {
+  color: #181018;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.profile-details-grid .value {
+  color: #181018;
+  font-weight: normal;
+  margin-left: 0.5rem;
+}
+
+.profile-details-grid .label-right {
+  color: #a06cc8;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.profile-details-grid .value-right {
+  color: #a06cc8;
+  font-weight: normal;
+  margin-left: 0.5rem;
+}
+
+/* === SOCIAL STATS BAR === */
+.social-stats-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+  margin: 2.2rem 0 0.5rem 0;
+}
+
+.social-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 2px solid #181018;
+  border-radius: 22px;
+  padding: 0.4rem 1.2rem;
+  font-size: 1.1rem;
+  color: #181018;
+  font-family: 'Gothic War', Arial, sans-serif;
+  transition: background 0.2s, color 0.2s;
+}
+
+.social-stat .icon {
+  font-size: 1.3rem;
+  margin-right: 0.3rem;
+}
+
+.social-stat.youtube { color: #ff0000; border-color: #ff0000; }
+.social-stat.twitch { color: #9146ff; border-color: #9146ff; }
+.social-stat.tiktok { color: #fe2c55; border-color: #fe2c55; }
+.social-stat.x { color: #181018; border-color: #181018; }
+
+.social-stat:hover {
+  background: #a06cc8;
+  color: #fff;
+  border-color: #a06cc8;
+}
+
+/* === MOMOS CONTENT HEADER === */
+.momos-content-header {
+  font-size: 2.7rem;
+  color: #181018;
+  text-align: center;
+  margin: 3.2rem 0 2.2rem 0;
+  font-family: 'Gothic War', Arial, sans-serif;
+  letter-spacing: 4px;
+  text-shadow: 0 2px 8px #a06cc8;
+}
+
+/* === CONTENT GRID === */
+.content-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 2.5rem 3.5rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.content-card {
+  background: #fff;
+  border: 2px solid #181018;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px 0 #a06cc880;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-card img,
+.content-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* === FOOTER === */
+.site-footer {
+  background: #fff;
+  border-top: 2px solid #181018;
+  padding: 0.8rem 0 0.8rem 0;
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-footer .footer-brand {
+  font-size: 1.5rem;
+  color: #181018;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-family: 'Gothic War', Arial, sans-serif;
+  margin-left: 2vw;
+}
+
+.site-footer .footer-icons {
+  display: flex;
+  gap: 1.2rem;
+  margin-right: 2vw;
+}
+
+.site-footer .footer-icons a {
+  font-size: 1.5rem;
+  color: #181018;
+  transition: color 0.2s;
+}
+
+.site-footer .footer-icons a:hover {
+  color: #a06cc8;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 900px) {
+  .profile-page {
+    padding: 90px 0.5vw 0 0.5vw;
+  }
+  .profile-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+  }
+  .profile-art-container {
+    margin-bottom: 1.5rem;
+  }
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0 8px;
+  }
+  .profile-art-container,
+  .hero-image,
+  .profile-art-bg {
+    width: 220px;
+    height: 280px;
+  }
+  .profile-header h1,
+  .momos-content-header {
+    font-size: 2rem;
+  }
+  .site-footer .footer-brand {
+    font-size: 1.1rem;
+  }
+}
+
+/* === UTILITY === */
+a, button {
+  font-family: 'Gothic War', Arial, sans-serif;
+}
